@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+
+# Build artifacts
+packages/*/dist
+packages/*/build
+packages/*/out
+packages/*/lib
+packages/twa-frontend/.next
+packages/twa-frontend/out
+
+# Lock files & logs
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+coverage
+.vercel
+*.tsbuildinfo 

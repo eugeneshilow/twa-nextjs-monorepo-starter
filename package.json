@@ -1,0 +1,35 @@
+{
+  "name": "twa-nextjs-monorepo-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starter Template: TWA Frontend (Next.js), API Server placeholder, DB placeholder in a pnpm Monorepo",
+  "scripts": {
+    "dev:frontend": "pnpm --filter @repo/twa-frontend run dev",
+    "build:frontend": "pnpm --filter @repo/twa-frontend run build",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint": "eslint . --report-unused-disable-directives",
+    "lint:fix": "eslint . --fix",
+    "lint:strict": "eslint . --max-warnings 0",
+    "typecheck:all": "pnpm --filter \"./packages/**\" typecheck",
+    "typecheck:frontend": "pnpm --filter @repo/twa-frontend typecheck",
+    "typecheck:api": "pnpm --filter @repo/api-server typecheck",
+    "typecheck:db": "pnpm --filter @repo/db typecheck"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.25.1",
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "eslint-config-next": "15.3.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.8.0"
+}

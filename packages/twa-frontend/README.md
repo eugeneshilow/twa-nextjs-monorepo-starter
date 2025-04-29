@@ -6,27 +6,27 @@ This package contains the Next.js frontend application for the TWA Starter Templ
 
 - **Framework:** [Next.js](https://nextjs.org/) (using the App Router)
 - **UI:**
-    - [@telegram-apps/telegram-ui](https://github.com/Telegram-Mini-Apps/TelegramUI): Components for a native Telegram look and feel.
-    - [Tailwind CSS](https://tailwindcss.com/): Utility-first CSS framework (basic setup).
-    - `normalize.css`: CSS resets.
+  - [@telegram-apps/telegram-ui](https://github.com/Telegram-Mini-Apps/TelegramUI): Components for a native Telegram look and feel.
+  - [Tailwind CSS](https://tailwindcss.com/): Utility-first CSS framework (basic setup).
+  - `normalize.css`: CSS resets.
 - **TWA Integration:**
-    - [@telegram-apps/sdk-react](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk-react): Hooks and functions for interacting with the Telegram Mini Apps platform (theme params, back button, init data, etc.).
-    - Mocking setup (`src/hooks/useTelegramMock.ts`) for easier local development outside the Telegram client.
+  - [@telegram-apps/sdk-react](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk-react): Hooks and functions for interacting with the Telegram Mini Apps platform (theme params, back button, init data, etc.).
+  - Mocking setup (`src/hooks/useTelegramMock.ts`) for easier local development outside the Telegram client.
 - **Internationalization (i18n):**
-    - [next-intl](https://next-intl-docs.vercel.app/): Configured for multiple languages (English and Russian examples provided in `public/locales`).
+  - [next-intl](https://next-intl-docs.vercel.app/): Configured for multiple languages (English and Russian examples provided in `public/locales`).
 - **TON Blockchain Integration:**
-    - [@tonconnect/ui-react](https://github.com/ton-connect/ui-react): Example integration for connecting TON wallets.
+  - [@tonconnect/ui-react](https://github.com/ton-connect/ui-react): Example integration for connecting TON wallets.
 - **Structure:**
-    - Components organized for reusability.
-    - Core setup for SDK initialization and providers.
-    - Basic routing examples.
+  - Components organized for reusability.
+  - Core setup for SDK initialization and providers.
+  - Basic routing examples.
 
 ## Development Scripts
 
 (Run these from the **root** of the monorepo)
 
-*   `pnpm dev:frontend`: Runs the Next.js development server (`http://localhost:3000`).
-*   `pnpm build:frontend`: Builds the frontend application for production.
+- `pnpm dev:frontend`: Runs the Next.js development server (`http://localhost:3000`).
+- `pnpm build:frontend`: Builds the frontend application for production.
 
 (Or run standard Next.js commands from within this directory: `pnpm dev`, `pnpm build`, `pnpm start`, `pnpm lint`)
 
